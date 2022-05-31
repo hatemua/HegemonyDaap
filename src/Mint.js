@@ -44,7 +44,7 @@ const [status, setStatus] = useState("");
 const [name, setName] = useState("");
 const [description, setDescription] = useState("");
 const [url, setURL] = useState("");
-const [amount, setAmount] = useState("");
+const [amount, setAmount] = useState(0);
 const [open, setOpen] = useState(false);
 const [WorM, setWorM] = useState("");
 const [connector, setConnector] = useState(null);
@@ -189,6 +189,9 @@ return (
 
   backgroundPosition: "center",
   backgroundRepeat: "no-repeat",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
 }}>
 
        
@@ -215,8 +218,33 @@ return (
                         <h2 className="form-title">Hegemony Capsules</h2>
                             <div className="form-group">
                                 <label for="your_name"><i className="zmdi zmdi-account material-icons-name"></i></label>
-                                <input type="text" name="your_name" id="your_name" placeholder="Number of NFT" value={amount} onChange={(e)=>setAmount(e.target.value)}/>
-                            
+                  <div className="nft-number">
+                    <button
+                      className="increment-btn"
+                      disabled={amount === 0}
+                      onClick={() => {
+                        setAmount((currentvalue) => currentvalue - 1);
+                      }}
+                    >
+                      -
+                    </button>
+                    <input
+                      type="text"
+                      name="your_name"
+                      id="your_name"
+                      disabled={true}
+                      placeholder="Number of NFT"
+                      value={amount !== 0 ? amount : ""}
+                    />
+                    <button
+                      className="increment-btn"
+                      onClick={() => {
+                        setAmount((currentvalue) => currentvalue + 1);
+                      }}
+                    >
+                      +
+                    </button>
+                  </div>                            
 							</div>
                            
                            
@@ -235,9 +263,9 @@ return (
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
-			<Stack direction="row" spacing={2}>
-				<img src="metamask.png" style={{width:"50%",height:"20%"}} onClick={async () => {await connectWalletPressed();}}/>
-				<img src="WalletConnect.png" style={{width:"50%",height:"20%"}} onClick={async () => {await connectWalletPressedWC();}}/>
+			<Stack direction="row" spacing={2} style={{justifyContent: "space-around"}}>
+				<img src="metamask.png" style={{width:"20%",height:"20%"}} onClick={async () => {await connectWalletPressed();}}/>
+				<img src="WalletConnect.png" style={{width:"20%",height:"20%"}} onClick={async () => {await connectWalletPressedWC();}}/>
 			</Stack>
         </Box>
       </Modal>

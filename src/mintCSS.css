@@ -187,7 +187,7 @@ h2 {
 
 .main {
   background: #f8f8f8;
-  padding: 55px; }
+ }
 
 .clear {
   clear: both; }
@@ -270,7 +270,8 @@ body {
 
 figure {
   margin-bottom: 50px;
-  text-align: center; }
+  text-align: center;
+  padding-top: 10px; }
 
 .form-submit {
   display: inline-block;
@@ -319,10 +320,13 @@ figure {
 #your_name {
 	background-color: #ffffff20;
     /* height: 100px; */
-    border-radius: 10px;
+    /*border-radius: 10px;*/
     /* border: 10px; */
     border: solid #f8f8f820;
-    margin-top: 20%;
+   /* margin-top: 20%; */
+   text-align: center;
+   border-right: none;
+   border-left: none;
 }
 input {
   width: 100%;
@@ -453,7 +457,7 @@ label.valid {
   font-size: 18px; }
 
 .signin-content {
-  padding-top: 67px;
+  padding: 67px 0;
   /*padding-bottom: 87px; */}
 
 .social-login {
@@ -591,6 +595,17 @@ label.valid {
     margin-right: 0px;
     margin-bottom: 10px; } }
 	
-
+    .nft-number{
+      margin-top:20px;
+      display: flex;
+      
+    }
+  
+    .increment-btn{
+      width: 50px;
+      font-size: 26px;
+      margin: 0;
+      border: none;
+    }
 
 /*# sourceMappingURL=style.css.map */
