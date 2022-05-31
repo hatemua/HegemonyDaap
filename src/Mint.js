@@ -196,7 +196,6 @@ return (
 
        
 
-        <section className="sign-in">
             <div className="container">
                 <div className="signin-content">
 				     
@@ -255,7 +254,6 @@ return (
                     </div>
                 </div>
             </div>
-        </section>
 		<Modal
         open={open}
         onClose={handleClose}

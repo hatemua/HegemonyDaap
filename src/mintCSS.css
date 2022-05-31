@@ -213,7 +213,10 @@ body {
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
   -o-border-radius: 20px;
-  -ms-border-radius: 20px; }
+  -ms-border-radius: 20px; 
+  max-height: 100%;
+  overflow: scroll;
+}
 
 .display-flex {
   justify-content: space-between;
