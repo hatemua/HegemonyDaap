@@ -1,0 +1,423 @@
+/*
+	@name frame_1
+*/
+/* Only edit this if you know what you are doing! */
+body { margin: 0px; padding: 0px; font-family:"Arial"; overflow-x:hidden; }
+
+/* Only edit this if you know what you are doing! */
+img { position: absolute; display: block; margin: 0px; border: none; padding: 0px; }
+
+/* Only edit this if you know what you are doing! */
+div { position: absolute; }
+
+#content-container { display: block; position: relative; width: 1280px; width: 1280px; height: 722.01397705078px; overflow: hidden; display: block;  margin-left: auto; margin-right: auto;  }
+
+#_bg__frame_1 {
+	top: 0px;
+	left: 0px;
+	width: 1280px;
+	height: 722.01px;
+	background:rgba(255,255,255,1);
+}
+
+
+#__img___rectangle_and_bgimg {
+	top: 0px !important;
+	position: absolute !important;
+	left: 0px;
+	width: 1278.94px;
+	height: 720px;
+	background:url(skins/__img___rectangle_and_bgimg.png);
+	background-size:cover;
+}
+
+
+#__img___design_left_circle {
+	top: 242.89px !important;
+	position: absolute !important;
+	left: 40.75px;
+	width: 19.41px;
+	height: 191.57px;
+	background:url(skins/__img___design_left_circle.png);
+	background-size:cover;
+}
+
+
+#exclusive_mint {
+	top: 640.51px;
+	left: 156.81px;
+	width: 384px;
+	height: 100px;
+	overflow: hidden;
+	font-family: Stratos LC Web;
+	font-size: 50px;
+	font-weight: bold;
+	text-align: left;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: #ffffff;
+	color:#FFFFFF;
+}
+
+
+#days {
+	top: 643.38px;
+	left: 619px;
+	width: 65px;
+	height: 39px;
+	overflow: hidden;
+	font-family: Stratos LC Web;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: left;
+	color:#6C6C6C;
+}
+
+
+#hours {
+	top: 643.38px;
+	left: 786.13px;
+	width: 81px;
+	height: 39px;
+	overflow: hidden;
+	font-family: Stratos LC Web;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: left;
+	color:#6C6C6C;
+}
+
+
+#mins {
+	top: 643.38px;
+	left: 953.26px;
+	width: 68px;
+	height: 39px;
+	overflow: hidden;
+	font-family: Stratos LC Web;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: left;
+	color:#6C6C6C;
+}
+
+
+#sec {
+	top: 643.38px;
+	left: 1120.39px;
+	width: 56px;
+	height: 39px;
+	overflow: hidden;
+	font-family: Stratos LC Web;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: left;
+	color:#6C6C6C;
+}
+
+
+#_7 {
+	top: 634.01px;
+	left: 567.21px;
+	width: 98px;
+	height: 118px;
+	overflow: hidden;
+	font-family: Stratos LC Web;
+	font-size: 60px;
+	font-weight: bold;
+	text-align: left;
+	color:#FFFFFF;
+}
+
+
+#_14 {
+	top: 634.01px;
+	left: 704.34px;
+	width: 131px;
+	height: 118px;
+	overflow: hidden;
+	font-family: Stratos LC Web;
+	font-size: 60px;
+	font-weight: bold;
+	text-align: left;
+	color:#FFFFFF;
+}
+
+
+#_27 {
+	top: 634.01px;
+	left: 874.46px;
+	width: 131px;
+	height: 118px;
+	overflow: hidden;
+	font-family: Stratos LC Web;
+	font-size: 60px;
+	font-weight: bold;
+	text-align: left;
+	color:#FFFFFF;
+}
+
+
+#_58 {
+	top: 634.01px;
+	left: 1044.58px;
+	width: 131px;
+	height: 118px;
+	overflow: hidden;
+	font-family: Stratos LC Web;
+	font-size: 60px;
+	font-weight: bold;
+	text-align: left;
+	color:#FFFFFF;
+}
+
+
+#__img___group_1 {
+	top: 0px !important;
+	position: absolute !important;
+	left: 0px;
+	width: 1278.94px;
+	height: 720px;
+	background:url(skins/__img___group_1.png);
+	background-size:cover;
+}
+
+
+#_120___7777 {
+	top: 466.58px;
+	left: 344.07px;
+	width: 243.14px;
+	height: 80px;
+	overflow: hidden;
+	font-family: Stratos LC Web;
+	font-size: 40px;
+	font-weight: bold;
+	text-align: right;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: #ffffff;
+	color:#FFFFFF;
+}
+
+
+#nft_collectible_project_of_unique__digitally_hand_drown_avatars_immortalized_on_the_ethereum_blockchain {
+	top: 364.25px;
+	left: 156.81px;
+	width: 426.3px;
+	height: 89px;
+	overflow: hidden;
+	font-family: Stratos LC Web;
+	font-size: 20px;
+	text-align: left;
+	color:#6C6C6C;
+}
+
+
+#_7777_generative_avatar_characters_with_over_100_hand_frawn_features {
+	top: 203.42px;
+	left: 156.81px;
+	width: 452.9px;
+	height: 158.5px;
+	overflow: hidden;
+	font-family: Stratos LC Web;
+	font-size: 35px;
+	font-weight: bold;
+	text-align: left;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: #ffffff;
+	color:#FFFFFF;
+}
+
+
+#vector {
+	top: 257.27px !important;
+	position: absolute !important;
+	left: 1217.2px;
+	width: 23.48px;
+	height: 13.2px;
+	background:url(skins/vector.png);
+	background-size:cover;
+}
+
+
+#vector_ek1 {
+	top: 208.72px !important;
+	position: absolute !important;
+	left: 1217.2px;
+	width: 24.81px;
+	height: 18.61px;
+	background:url(skins/vector_ek1.png);
+	background-size:cover;
+}
+
+
+#vector_ek2 {
+	top: 159.7px !important;
+	position: absolute !important;
+	left: 1217.2px;
+	width: 23.47px;
+	height: 19.08px;
+	background:url(skins/vector_ek2.png);
+	background-size:cover;
+}
+
+
+#__img___group_2 {
+	top: 145.63px !important;
+	position: absolute !important;
+	left: 805.09px;
+	width: 161px;
+	height: 257px;
+	background:url(skins/__img___group_2.png);
+	background-size:cover;
+}
+
+
+#__img___group_1_ek1 {
+	top: 40.32px !important;
+	position: absolute !important;
+	left: 209.79px;
+	width: 117.37px;
+	height: 19.03px;
+	background:url(skins/__img___group_1_ek1.png);
+	background-size:cover;
+}
+
+
+#__img___group_3 {
+	top: 263.87px !important;
+	position: absolute !important;
+	left: 940.46px;
+	width: 161px;
+	height: 257px;
+	background:url(skins/__img___group_3.png);
+	background-size:cover;
+}
+
+#frame_2_1 {
+	top: 468.16px;
+	left: 155.31px;
+	width: 169px;
+	height: 48px;
+}
+
+#vector_ek3 {
+	top: 0.04px !important;
+	position: absolute !important;
+	left: 0.3px;
+	width: 168px;
+	height: 47px;
+	background:url(skins/vector_ek3.png);
+	background-size:cover;
+}
+
+
+#vector_ek4 {
+	top: 0.04px !important;
+	position: absolute !important;
+	left: 0.3px;
+	width: 168px;
+	height: 47px;
+	background:url(skins/vector_ek4.png);
+	background-size:cover;
+}
+
+
+#vector_ek5 {
+	top: 0.04px !important;
+	position: absolute !important;
+	left: 0.3px;
+	width: 168px;
+	height: 47px;
+	background:url(skins/vector_ek5.png);
+	background-size:cover;
+}
+
+
+#vector_ek6 {
+	top: 1.04px !important;
+	position: absolute !important;
+	left: 1.3px;
+	width: 166px;
+	height: 45px;
+	background:url(skins/vector_ek6.png);
+	background-size:cover;
+}
+
+
+#mint {
+	top: 480.66px;
+	left: 223.31px;
+	width: 59px;
+	height: 36px;
+	overflow: hidden;
+	font-family: Stratos LC Web;
+	font-size: 18px;
+	text-align: left;
+	color:#FFFFFF;
+}
+
+#frame_3_2 {
+	top: 28.69px;
+	left: 958.27px;
+	width: 194px;
+	height: 44px;
+}
+
+#vector_ek7 {
+	top: 0.69px !important;
+	position: absolute !important;
+	left: 0.27px;
+	width: 193px;
+	height: 43px;
+	background:url(skins/vector_ek7.png);
+	background-size:cover;
+}
+
+
+#vector_ek8 {
+	top: 0.69px !important;
+	position: absolute !important;
+	left: 0.27px;
+	width: 193px;
+	height: 43px;
+	background:url(skins/vector_ek8.png);
+	background-size:cover;
+}
+
+
+#vector_ek9 {
+	top: 0.69px !important;
+	position: absolute !important;
+	left: 0.27px;
+	width: 193px;
+	height: 43px;
+	background:url(skins/vector_ek9.png);
+	background-size:cover;
+}
+
+
+#vector_ek10 {
+	top: 1.69px !important;
+	position: absolute !important;
+	left: 1.27px;
+	width: 191px;
+	height: 41px;
+	background:url(skins/vector_ek10.png);
+	background-size:cover;
+}
+
+
+#connect_wallet {
+	top: 38.69px;
+	left: 992.27px;
+	width: 146px;
+	height: 36px;
+	overflow: hidden;
+	font-family: Stratos LC Web;
+	font-size: 18px;
+	text-align: left;
+	color:#FFFFFF;
+}
+
+
+
+/* Add your custom CSS here */
