@@ -3,6 +3,7 @@
 import { contractABI } from './abi';
 import { EventAbi } from './EventAbi';
 const alchemyKey="https://eth-mainnet.alchemyapi.io/v2/9YkULSmxC2HB8TD7N01E0NMceYtP9KUh";
+const TestnetRPC= "https://sepolia.infura.io/v3/";
 const alchemyKeyPolygon="https://polygon-mumbai.g.alchemy.com/v2/5poS7fZK0MZD8IXlCJT812ku4pwpwsHS";
 const { createAlchemyWeb3 } = require("@alch/alchemy-web3");
 const {ethers, Wallet} = require("ethers");
@@ -93,7 +94,7 @@ export const getCurrentWalletConnected = async () => {
 
 export const mintNFT = async(amount) => {
  //error handling
-  const provider= new ethers.providers.JsonRpcProvider(alchemyKey);
+  const provider= new ethers.providers.JsonRpcProvider(TestnetRPC);
 	   const gasPrice = await provider.getFeeData();
   const val= Number(amount * 0.1 * 1e18).toString(16);
   const nftContract = await new web3.eth.Contract(contractABI, contractAddress,amount);
@@ -101,9 +102,11 @@ export const mintNFT = async(amount) => {
     const transactionParameters = {
         to: contractAddress, // Required except during contract publications.
         from: window.ethereum.selectedAddress, // must match user's active address.
-        gasPrice: gasPrice.gasPrice.toHexString() , 
-		gas: ethers.BigNumber.from(150000).toHexString(),
-
+        maxPriorityFeePerGas: web3.utils.toHex(
+          Number(gasPrice.maxPriorityFeePerGas) * 50
+        ),
+        maxFeePerGas: null,
+        gas: ethers.BigNumber.from(400000).toHexString(),
 		value: "0x" + val,
         'data': nftContract.methods.mint(amount).encodeABI() //make call to NFT smart contract 
 		//Web3.utils.toBN(Web3.utils.toWei(val, "ether")).toString(16)
@@ -129,7 +132,7 @@ export const mintNFT = async(amount) => {
 }
 export const mintNFTWC = async(connector,account,amount) => {
  //error handling
-  	const provider= new ethers.providers.JsonRpcProvider(alchemyKey);
+  	const provider= new ethers.providers.JsonRpcProvider(TestnetRPC);
 	   const gasPrice = await provider.getFeeData();
 
   const val= Number(amount * 0.1 * 1e18).toString(16);
@@ -138,8 +141,11 @@ export const mintNFTWC = async(connector,account,amount) => {
     const tx = {
         to: contractAddress, // Required except during contract publications.
         from: account, // must match user's active address.
-		gasPrice: gasPrice.gasPrice.toHexString() , 
-		gas: ethers.BigNumber.from(150000).toHexString(),
+        maxPriorityFeePerGas: web3.utils.toHex(
+          Number(gasPrice.maxPriorityFeePerGas) 
+        ),
+        maxFeePerGas: null,
+        gas: ethers.BigNumber.from(400000).toHexString(),
 
        
 		value: "0x" + val,

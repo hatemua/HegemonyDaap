@@ -183,7 +183,7 @@ const history = useHistory();
 
 return (
 	 <>
-	  <div className="main" style={{backgroundImage: "url(/mint-bg.jpg)",
+	  <div className="main" style={{backgroundImage: "url(/container.jpeg)",
 
   height: "100vh",
 
@@ -196,7 +196,17 @@ return (
 
        
 
-            <div className="container">
+            <div className="container" 
+//              style={{backgroundImage: "url(/container.jpeg)",
+
+// height: "100%",
+
+// backgroundPosition: "center",
+// backgroundRepeat: "no-repeat",
+// display: "flex",
+// alignItems: "center",
+// justifyContent: "center"}}
+> 
                 <div className="signin-content">
 				     
                     <div className="signin-image">
@@ -209,12 +219,13 @@ return (
           <span>Connect Wallet</span>
         )}</Button> 
 		
-                        <figure><img src="Hegemoney_DNA_V2.gif" alt="sing up image" /></figure>
+                        <figure><img src="/preview.gif" alt="sing up image" /></figure>
                     </div>
 					
                     <div className="signin-form">
 						
-                        <h2 className="form-title">Hegemony Capsules</h2>
+                        {/* <h2 className="text">PixelPepe</h2> */}
+                        <figure><img src="/logo.png" alt="sing up image" /></figure>
                             <div className="form-group">
                                 <label for="your_name"><i className="zmdi zmdi-account material-icons-name"></i></label>
                   <div className="nft-number">
@@ -245,10 +256,17 @@ return (
                     </button>
                   </div>                            
 							</div>
-                           
-                           
-                            <div className="form-group form-button">
-                                <input type="submit" name="signin" id="signin" className="form-submit" value="Mint" onClick={async () => {await onMintPressed();}}/>
+                <h4 class="text" style={{color:"white"}}>10 / 4321</h4>                           
+                            <div onClick={async () => {await onMintPressed();}}
+                            style={{backgroundImage: "url(/btnMint.gif)",
+
+height: 200,
+
+backgroundPosition: "center",
+backgroundRepeat: "no-repeat",
+display: "flex",
+alignItems: "center",
+justifyContent: "center"}}>
                             </div>
                         
                     </div>
